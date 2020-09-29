@@ -6,14 +6,34 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //load data json file and parse it
+        if let path = Bundle.main.path(forResource: "data", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+                let jsonObj = try JSON(data: data)
+                //Parsing
+                if filterBrain.parseJSON(with: jsonObj){
+                    print("[Data.json has read and parsed]")
+                    
+                }else{
+                    print("Parsing JSON Error")
+                }
+                
+            } catch let error {
+                print("parse error: \(error.localizedDescription)")
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
         return true
     }
 
