@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-TagFilter/Pods-TagFilter-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework

@@ -1,0 +1,20 @@
+PODS:
+  - SwiftyJSON (5.0.0)
+  - TagListView (1.4.1)
+
+DEPENDENCIES:
+  - SwiftyJSON
+  - TagListView
+
+SPEC REPOS:
+  trunk:
+    - SwiftyJSON
+    - TagListView
+
+SPEC CHECKSUMS:
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+
+PODFILE CHECKSUM: 7e15423116224649b49941190e020b5373803d13
+
+COCOAPODS: 1.9.3
